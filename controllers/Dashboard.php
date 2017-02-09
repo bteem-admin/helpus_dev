@@ -27,6 +27,7 @@ class Dashboard extends CI_Controller {
 		$show_data['user_categories']=$this->Generalsettings_model->getall_user_categories($condition);
 
 		$this->load->view('dashboard_view',$show_data);
+		//
 
 	}
 
