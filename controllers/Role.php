@@ -47,7 +47,7 @@ class Role extends CI_Controller {
 				if($result>0)
 				{
 					$this->success('<p class="success">Role has been added successfully</p>');
-					redirect('index.php/role');
+					redirect('index.php/Role');
 					exit;					
 				}
 			}
@@ -81,7 +81,7 @@ class Role extends CI_Controller {
 				if($result>0)
 				{
 					$this->success('<p class="success">Role have been updated successfully</p>');
-					redirect('index.php/role');
+					redirect('index.php/Role');
 				}
 			}
 		}

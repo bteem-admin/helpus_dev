@@ -121,7 +121,7 @@ class User extends CI_Controller {
 						// 	$this->send_sms($subagnet_message,$user_info['phone_no']);
 						// }
 						$this->success('<p class="success">User has been added successfully</p>');
-						redirect('index.php/user');
+						redirect('index.php/User');
 						exit;
 					}
 					
@@ -198,7 +198,7 @@ class User extends CI_Controller {
 				if($result>0)
 				{
 					$this->success('<p class="success">User details have been updated successfully</p>');
-					redirect('index.php/user');
+					redirect('index.php/User');
 				}
 			}
 		}

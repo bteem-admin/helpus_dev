@@ -49,7 +49,7 @@ class Category extends CI_Controller {
 				if($result>0)
 				{
 					$this->success('<p class="success">Category has been added successfully</p>');
-					redirect('index.php/category');
+					redirect('index.php/Category');
 					exit;					
 				}
 			}
@@ -84,7 +84,7 @@ class Category extends CI_Controller {
 				if($result>0)
 				{
 					$this->success('<p class="success">Category have been updated successfully</p>');
-					redirect('index.php/category');
+					redirect('index.php/Category');
 				}
 			}
 		}

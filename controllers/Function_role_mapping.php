@@ -59,7 +59,7 @@ class Function_role_mapping extends CI_Controller {
 				if($result>0)
 				{
 					$this->success('<p class="success">Function Role Mapping has been successfully done</p>');
-					redirect('index.php/function_role_mapping');
+					redirect('index.php/Function_role_mapping');
 					exit;					
 				}
 			}
@@ -110,7 +110,7 @@ class Function_role_mapping extends CI_Controller {
 				if($result>0)
 				{
 					$this->success('<p class="success">Function Role Mapping has been updated successfully</p>');
-					redirect('index.php/function_role_mapping');
+					redirect('index.php/Function_role_mapping');
 				}
 			}
 		}

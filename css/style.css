@@ -480,7 +480,8 @@ a {
 }
 .banner
 {
-    /*width: 1085px;*/
+    margin: 0 auto;
+    width: 1140px;
 }
 .banner_left
 {
@@ -495,7 +496,6 @@ a {
     border: 1px solid #000000;
     float: left;
     margin-top: 30px;
-    width: 100%;
 }
 .banner_right
 {

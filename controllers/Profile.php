@@ -100,7 +100,7 @@ class Profile extends CI_Controller {
 				{
 					$this->change_clientSession($this->Profile_model->get_profile_client($this->session->userdata('user_id')));
 					$this->success('<p class="success">Profile has been successfully updated</p>');
-					redirect('index.php/profile');
+					redirect('index.php/Profile');
 				}
 			}
 		}
@@ -173,7 +173,7 @@ class Profile extends CI_Controller {
 				{
 					$this->change_jobseekerSession($this->Profile_model->get_profile_jobseeker($this->session->userdata('user_id')));
 					$this->success('<p class="success">Profile has been successfully updated</p>');
-					redirect('index.php/profile');
+					redirect('index.php/Profile');
 				}
 			}
 		}
@@ -246,7 +246,7 @@ class Profile extends CI_Controller {
 				{
 					$this->change_employeeSession($this->Profile_model->get_user_profile($this->session->userdata('user_id')));
 					$this->success('<p class="success">Profile has been successfully updated</p>');
-					redirect('index.php/profile');
+					redirect('index.php/Profile');
 				}
 			}
 		}
@@ -273,12 +273,12 @@ class Profile extends CI_Controller {
 				if($result>0)
 				{
 					$this->success('<p class="success">Password has been changed successfully</p>');
-					redirect('index.php/profile');
+					redirect('index.php/Profile');
 				}
                 else
                 {
                     $this->success('<p class="success">Password update failed</p>');
-                    redirect('index.php/profile');
+                    redirect('index.php/Profile');
                 }
 			}
             else

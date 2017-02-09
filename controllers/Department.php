@@ -54,17 +54,8 @@ class Department extends CI_Controller {
 				
 				if($result>0)
 				{
-					// $info_array = array();
-					// for($i = 0; $i < sizeof($this->input->post('role')); $i++)
-					// {
-					// 	$info_array['department_id'] = $result;
-					// 	$info_array['role_id'] = $this->input->post('role')[$i];
-
-					// 	$result = $this->Generalsettings_model->create_department_role_mapping($info_array);	
-					// }
-
 					$this->success('<p class="success">Department has been added successfully</p>');
-					redirect('index.php/manage_department');
+					redirect('index.php/Department');
 					exit;					
 				}
 			}
@@ -103,18 +94,8 @@ class Department extends CI_Controller {
 				
 				if($result>0)
 				{
-					// $this->Generalsettings_model->clear_category_department($department_id);
-					// $info_array = array();
-					// for($i = 0; $i < sizeof($this->input->post('role')); $i++)
-					// {
-					// 	$info_array['department_id'] = $result;
-					// 	$info_array['role_id'] = $this->input->post('role')[$i];
-
-					// 	$result = $this->Generalsettings_model->create_department_role_mapping($info_array);
-					// }
-
 					$this->success('<p class="success">Department has been updated successfully</p>');
-					redirect('index.php/manage_department');
+					redirect('index.php/Department');
 				}
 			}
 		}
